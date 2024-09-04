@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BLOCTRIX</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #000;
+      color: #fff;
+      padding: 10px 0;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 8px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #f0f0f0;
+    }
+
+    .button-container {
+      text-align: center;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .logout {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      background-color: #4CAF50;
+      color: white;
+      padding: 5px 10px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    .logout:hover {
+      background-color: #45a049;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 20px;
+    }
+
+    .nav a {
+      color: #000;
+      text-decoration: none;
+      padding: 5px 10px;
+      border-bottom: 2px solid transparent;
+    }
+
+    .nav a:hover {
+      border-bottom: 2px solid #4CAF50;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      margin-left: 20px;
+    }
+
+    .logo img {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    .form-container {
+      margin-top: 20px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0 20px 0;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo.png.jpg" alt="BLOCTRIX Logo">
+      <h1>BLOCTRIX</h1>
+    </div>
+    <div class="logout">
+      <a href="#">Logout</a>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="nav">
+      <a href="#">Citizens</a>
+      <a href="#">Government</a>
+      <a href="#">Constituency</a>
+      <a href="#">Contractor</a>
+    </div>
+    <h1>Paid Taxes</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>09/05/2021</td>
+          <td>10</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h1>Pay Tax</h1>
+    <div class="form-container">
+      <input type="text" placeholder="Amount">
+      <div class="button-container">
+        <button>Submit</button>
+      </div>
+    </div>
+
+    <h1>Track You Tax</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Amount</th>
+          <th>Constituency</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>04/04/2020</td>
+          <td>25</td>
+          <td>Gurgaon</td>
+        </tr>
+      </tbody>
+    </table>
+  

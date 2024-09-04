@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOCTRIX</title>
+    <style>
+        body {
+            background-color: #030303;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 30px;
+            margin-right: 10px;
+        }
+
+        .nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav a {
+            color: #f1e9e9;
+            text-decoration: none;
+        }
+
+        .logout-btn {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 60px);
+        }
+
+        .card {
+            background-color: #f8faff;
+            color: #111;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+            box-shadow: 0 4px 8px rgba(5, 255, 101, 0.671);
+        }
+
+        .card-header {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .card-value {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .transfer-card {
+            background-color: #4CAF50;
+            color: #eb3232;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+            box-shadow: 0 4px 8px rgba(223, 4, 4, 0.986)2;
+            text-align: center;
+        }
+
+        .transfer-card-value {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .table-container {
+            margin-top: 20px;
+        }
+
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .table th, .table td {
+            border: 1px solid #51e6b4;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .table th {
+            background-color: #36cf83;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="logo.png.jpg" alt="BLOCTRIX Logo">
+            <h1>BLOCTRIX</h1>
+        </div>
+        <div class="nav">
+            <a href="#">Citizens</a>
+            <a href="#">Government</a>
+            <a href="#">Constituency</a>
+            <a href="#">Contractor</a>
+        </div>
+        <button class="logout-btn">Logout</button>
+
+        <h1> GOVERNMENT OF INDIA</h1>
+    </div>
+    <div class="content">
+        <div class="card">
+            <div class="card-header">Total Funds</div>
+            <div class="card-value">2392138 INR</div>
+        </div>
+        <div class="card">
+            <div class="card-header">Used Funds</div>
+            <div class="card-value">3202 INR</div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="card">
+            <div class="card-header">Previous Transfers</div>
+            <div class="table-container">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Amount</th>
+                            <th>Constituency</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>04/04/2024</td>
+                            <td>25</td>
+                            <td>Lodhi road</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- Transfer funds  -->
+    <div class="container">
+                <div class ="table container">
+            <div class ="table">
+                <h1>Transfer funds</h1>
+        <form>
+        <input type="text" placeholder="Enter Constituency ID" required>
+        <input type="text" placeholder="Amount" required>
+        <input type ="description" placeholder="description" required>
+        <button type="submit">Transfer</button>
+        </form>
+    </table>
+            </div>
+        </div>
+        
+    </div>
+    </body>
+    </html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaxChain</title>
+    <style>
+        body {
+            background-color: #555353;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: #000000;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(38, 223, 109, 0.658);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .card-content {
+            width: 48%;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #19abd8;
+        }
+
+        .card-title {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        .logout-button {
+            background-color: #f44336;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .logout-button:hover {
+            background-color: #d32f2f;
+        }
+
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .table th, .table td {
+            text-align: left;
+            padding: 8px;
+            border: 1px solid #0ce91e;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>BLOCTRIX</h1>
+        <div class="logout-button">Logout</div>
+        <h1>Citizen: Sagar Singh</h1>
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title">Purchase Tokens</div>
+                <input type="text" class="input-field" placeholder="Enter amount">
+                <button class="button">Submit</button>
+            </div>
+            <div class="card-content">
+                <div class="card-title">Current Tokens</div>
+                <p>2392138 INR</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title">Paid Taxes</div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2023-10-26</td>
+                            <td>1000 INR</td>
+                        </tr>
+                        <tr>
+                            <td>2023-10-27</td>
+                            <td>500 INR</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="card-content">
+                <div class="card-title">Pay Tax</div>
+                <input type="text" class="input-field" placeholder="Amount">
+                <button class="button">Submit</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
